@@ -1,0 +1,23 @@
+@media only screen and (max-width: 900px) {
+    .header
+    {
+        padding-left: 15%;
+        justify-content:flex-start;
+    }
+    .header_icon
+    {
+        min-width: 50px;
+        width:5%;
+    }
+    .section
+    {
+        display: none;
+        
+    }
+    .hidden_button
+    {
+        min-width: 50px;
+        display:block;
+    }
+}
+    
