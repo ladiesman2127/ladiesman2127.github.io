@@ -1,26 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-html
+
+
+.container_main
 {
-    background:url('/abstergo.github.io/assets/wallhaven-exooer.png') no-repeat center center;
+    background:url('./assets/wallhaven-exooer.png') no-repeat center center;
     background-size: cover;
-    overflow: hidden;
+    position: absolute;
+    height: 600vh;
+    width: 100%;
 }
 
-body
-{
-    height: 800vh;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-.container 
+.title_header
+{
+    text-align: center;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+}
+.container_header
 {
     width: 100%;
     height: 100vh;
@@ -92,7 +100,7 @@ body
     height: 100%;
     min-width: 5%;
     width: 5%;
-    background: url('/abstergo.github.io/assets/OIP.png') no-repeat;
+    background: url('./assets/OIP.png') no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -117,7 +125,7 @@ a
     position: relative;
     height: 100%;
     width: 5%;
-    background: url('/abstergo.github.io/assets/hidden.png') no-repeat;
+    background: url('./assets/hidden.png') no-repeat;
     background-size: cover;
     background-position: center center;
 }
