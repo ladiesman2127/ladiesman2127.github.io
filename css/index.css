@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
+html
+{
+    background-color: black;
+}
 
 *{
     margin: 0;
@@ -26,7 +29,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+    background: url(https://static-dm.akamaized.net/assassins-creed/valhalla/prod/71d0d73c5ae8edde84227e117c269cfa.png) 0 0 no-repeat;
+    background-position: center center;
     box-shadow: 0.1px 0.1px 0.1px 0.1px black;
     height: 5%;
     width: 100%;
@@ -46,7 +50,7 @@
 .header_el:hover
 {
     cursor: pointer;
-    box-shadow: 0px 10px 0px 0px black;
+    box-shadow: 0px 10px 0px 0px whitesmoke;
 }
 
 .section
@@ -54,25 +58,41 @@
     /* background-color: black; DEBUG */
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     height: 100%;
     width: 80%;
 }
 
+.hidden_section
+{
+    display: none;
+    flex-direction: column;
+    background-color: blacks;
+    border-radius: 1%;
+    width: 500%;
+    height: 500%;
+    left:-200%;
+    top:100%;
+    position: relative;
+}
+
 .header_icon
 {
+    position: relative;
+    display: block;
     height: 100%;
     width: 5%;
-    background: url('/public/assets/OIP.png') no-repeat;
-    background-size: contain;
+    background: url('/abstergo.github.io/assets/OIP.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 
 
 a
 {
-    color: #afc4c2;
+    color: whitesmoke;
 }
 
 .header_el:hover > a
@@ -88,7 +108,30 @@ a
     position: relative;
     height: 100%;
     width: 5%;
-    background: url('/public/assets/hidden.png') no-repeat;
-    background-size: contain;
+    background: url('/abstergo.github.io/assets/hidden.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
+
+.header_el_hidden
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 130%;
+}
+
+.header_el_hidden:hover
+{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px whitesmoke, 0px 0px 0px 1px whitesmoke;
+}
+
+
+.header_el_hidden:hover > a
+{
+    color:cadetblue;
+}
