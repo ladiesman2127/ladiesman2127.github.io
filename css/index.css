@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
+* {
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 5s ease-in-out, left 1.5s ease-in-out;
+}
 
 .container_main
 {
@@ -20,6 +27,7 @@
 
 .title_header
 {
+    word-wrap: break-word;
     text-align: center;
     height: 90%;
     display: flex;
